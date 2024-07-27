@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" name="king" tilewidth="78" tileheight="58" tilecount="11" columns="11">
+  <image source="../../../Downloads/Kings and Pigs/Sprites/01-King Human/Idle (78x58).png" trans="ffffff" width="858" height="58"/>
+ </tileset>
+ <tileset firstgid="12" name="king_run" tilewidth="78" tileheight="58" tilecount="8" columns="8">
+  <image source="../../../Downloads/Kings and Pigs/Sprites/01-King Human/Run (78x58).png" trans="ffffff" width="624" height="58"/>
+ </tileset>
+ <tileset firstgid="20" name="terrain" tilewidth="32" tileheight="32" tilecount="247" columns="19">
+  <image source="../../../Downloads/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" trans="ffffff" width="608" height="416"/>
+ </tileset>
+ <tileset firstgid="267" name="terrain_2" tilewidth="32" tileheight="32" tilecount="42" columns="7">
+  <image source="../../../Downloads/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" trans="ffffff" width="224" height="192"/>
+ </tileset>
+ <tileset firstgid="309" name="door" tilewidth="46" tileheight="56" tilecount="1" columns="1">
+  <image source="../../../Downloads/Kings and Pigs/Sprites/11-Door/Idle.png" trans="ffffff" width="46" height="56"/>
+ </tileset>
+ <layer id="1" name="background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyzYWBgsBkgvI7OeNTeUXtH7R21d9TeUXtH7R159g4EBgCC7m0g
+  </data>
+ </layer>
+ <layer id="4" name="ground" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwSgYvkCTzhgEAB93BH0=
+  </data>
+ </layer>
+ <layer id="5" name="collision" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYYDsAdlqP2jtq76i9o/aO2jtq76i9I8regQIAsbEIcQ==
+  </data>
+ </layer>
+</map>
