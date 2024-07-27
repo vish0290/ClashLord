@@ -1,17 +1,23 @@
 import pygame
-
-pygame.init()
-
-screen = pygame.display.set_mode((960, 640))
-
-screen.fill((0,0,0))
+from code.game_attr import Game
+from code.settings import *
 
 
-clock = pygame.time.Clock()
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            exit()
-    pygame.display.flip()
-    clock.tick(60)
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode([screen_width, screen_height])
+    pygame.display.set_caption(screen_title)
+    clock = pygame.time.Clock()
+    done = False
+    game = Game()
+
+    while not done:
+        done = game.processEvents()
+        game.runLogic()
+        game.draw(screen)
+        clock.tick(60)
+
+    pygame.quit()
+
+
+main()
